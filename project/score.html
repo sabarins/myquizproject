@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Result</title>
+    <style>
+    *
+    {
+        margin: 0px;
+        padding: 0px;
+        font-family:'calibri';
+        font-weight:lighter;
+    }
+    .heading
+    {
+    text-align: center;
+    margin-top: 20px;
+    }
+    #quizbox
+    {
+        border: 1px solid lightgray;
+        width: 90%;
+        margin: 30px;
+    }
+    #score,#medscore
+    {
+        text-align: center;
+        line-height: 50px;
+    }
+    .resscore
+    {
+       background-color:rgb(195, 230, 195);
+        color: white;
+        padding: 10px;
+    }
+    .textcolor
+    {
+        color: rgb(37, 177, 37);
+    }
+    #totalquestion, #wrongco, #correctco
+    {
+        text-align: center;
+        line-height: 40px;
+    }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1 class="heading">Alpha Quiz System</h1>
+    </div>
+    <div id="quizbox">
+        <h1 id="name"></h1>
+        <div class="resscore">
+            <h1 class="textcolor" id="score"></h1>
+            <h1 class="textcolor" id="medscore"></h1>
+        </div>
+        <div>
+            <h2 id="totalquestion"></h2>
+            <h2 id="wrongco"></h2>
+            <h2 id="correctco"></h2>
+        </div>
+    </div>
+
+
+    <script>
+        document.getElementById("score").innerText = localStorage.getItem("text");
+        document.getElementById("medscore").innerText = localStorage.getItem("medscor");
+        document.getElementById("totalquestion").innerText = "Total number of Questions : " +localStorage.getItem("no");
+        document.getElementById("wrongco").innerText = "Total number of Wrong Questions : " +localStorage.getItem("wrongcount");
+        document.getElementById("correctco").innerText = "Total number of Correct Questions : " +localStorage.getItem("correctcount");
+        document.getElementById("name").innerText = "HI " +localStorage.getItem("getname") + ",";
+
+
+    </script>
+</body>
+</html>

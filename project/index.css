@@ -1,0 +1,81 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:lighter;
+}
+.heading
+{
+    text-align: center;
+    margin-top: 20px;
+}
+.box
+{
+    border: 1px solid skyblue;
+    width: 90%;
+    margin: 30px;
+}
+.content_head
+{
+    background-color: skyblue;
+    color: white;
+    padding: 10px;
+}
+.content
+{
+    color: skyblue;
+    margin: 30px;
+}
+
+.chbx
+{
+    margin: 20px;
+}
+
+.quizstart
+{
+    margin-left: 20px;
+    padding: 10px;
+    background-color: rgb(91, 202, 91);
+    color: white;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+}
+#alert
+{
+    display: none;
+    border: 1px solid skyblue;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    width: 500px;
+    transform: translate(90%,-100%);
+    background-color:darkorange;
+    color: white;
+    text-align: center;
+}
+
+.cancelbtn,.okbtn
+{
+    padding: 5px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.cancelbtn
+{
+    background-color: red;
+    color: white;
+}
+
+.okbtn{
+    background-color: rgb(43, 136, 43);
+    color: white;
+}
+
+
+
+

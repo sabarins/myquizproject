@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <h1 class="heading">Alpha Quiz System</h1>
+        </div>
+        <div class="box">
+                <div class="content_head">
+                    <p>Rules and Regulations for the Quiz</p>
+                </div>
+                <div class="content">
+                    <p>1. Quiz will contain total 20 questions.</p>
+                    <p>2. One point will be awarded for each correct answer</p>
+                    <p>3. No half marks will be awarded</p>
+                    <p>4. Each question has 4 options</p>
+                    <p>5. Do not refresh the page</p>
+                    <p>6. Final score will be shown after the submission of the quiz</p>
+                    <p>7. Do not move out of the quiz window else your quiz will be auto submitted.</p>
+                </div>
+            <div class="chbx">
+                <input type="checkbox" id="check">
+                <label for="check">I Agree</label>
+                <button onclick="startquiz()" class="quizstart"  id="quiz" >Start Quiz</button>
+            </div>   
+        </div>
+        <div id="alert">
+            <p style="position: relative">Please agree and start quiz!  </p>
+            <button class="cancelbtn" onclick="alertbtn()">Cancel</button>
+            <button class="okbtn" onclick="alertbtn()">Ok</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

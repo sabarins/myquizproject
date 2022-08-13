@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+
+    <style>
+
+    *
+    {
+        margin: 0px;
+        padding: 0px;
+        font-family:'calibri';
+        font-weight:lighter;
+    }
+    .heading
+{
+    text-align: center;
+    margin-top: 20px;
+}
+    #quizbox
+    {
+        border: 1px solid rgb(14, 141, 190);
+        width: 50%;
+        margin: 30px;
+    }
+    #ques
+    {
+        margin-left: 20px;
+        font-size: larger;
+    }
+    .optio
+    {
+        margin-left: 35px;
+
+    }
+    .inplabel
+    {
+        margin-left: 5px;
+    }
+    .btn
+    {
+        background-color: rgb(245, 240, 240);
+        margin-top: 20px;
+    }
+    #quest
+    {
+        background-color: rgb(14, 141, 190);
+        color: white;
+        padding: 15px;
+    }
+    .option
+    {
+        margin-top: 20px;
+        line-height: 30px;
+        
+    }
+    .opt-block
+    {
+        display: block;
+    }
+    
+    #prev
+    {
+        border: none;
+        padding: 10px;
+        color: white;
+        border-radius: 5px;
+        background-color:  rgb(137, 228, 137);              
+        font-size: large; 
+    }
+    #next 
+    {
+        border: none;
+        padding: 10px;
+        background-color: rgb(37, 177, 37);
+        color: white;
+        border-radius: 5px;
+        font-size: large; 
+        cursor: pointer;
+    }
+    #answerdisplay
+    {
+        padding: 15px;
+        color: rgb(76, 194, 76);
+        font-weight:normal;
+    }
+    #ansdis
+    {
+        display: none;
+        border-radius: 3px;
+        width: 400px;
+        margin: 20px 0px 0px 35px;
+        background-color: rgb(228, 250, 228);
+    }
+    .prevbtn
+    {
+        margin-left: 30px;
+    }
+    
+    .button
+    {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    </style>
+    
+
+</head>
+<body>
+    <div class="head">
+        <h1 class="heading">Alpha Quiz System</h1>
+        <input type="text" id="text" value="Your Name">
+    </div>
+     <div id="quizbox">
+        <div id="quest">
+            <p id="ques"></p>
+        </div>
+        <div class="option">
+            <input type="radio" id="a" name="option" class="optio" onclick="disans()"><label id="opt1" class="inplabel" for="a"></label> <br>
+            <input type="radio" id="b" name="option" class="optio" onclick="disans()"><label id="opt2" class="inplabel" for="b"></label> 
+        </div>
+        <div id="ansdis">
+            <p id="answerdisplay"></p>
+        </div>
+        <div class="btn">
+            <button id="prev" class="prevbtn button" onclick="prev()">Previous</button>
+            <button id="next" class="button" value="Next" onclick="next()">Next</button>
+         </div>
+     </div>
+     
+    <div>
+        <h1 id="score"></h1>
+        <h1 id="medscore"></h1>
+    </div>
+
+
+    <script src="quiz.js"></script>
+</body>
+</html>
+
+
+
+
+    
+     
+    
+    
